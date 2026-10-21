@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glad Halloween! 🎃</title>
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background: linear-gradient(135deg, #12051f, #45116b, #18072b);
+        }
+
+        .container {
+            padding: 40px 25px;
+            max-width: 600px;
+            margin: 20px;
+            background: rgba(20, 5, 35, 0.8);
+            border: 2px solid orange;
+            border-radius: 25px;
+            box-shadow: 0 0 30px #a020f0;
+        }
+
+        h1 {
+            color: #ff9d00;
+            font-size: 42px;
+            text-shadow: 0 0 15px orange;
+        }
+
+        .pumpor {
+            font-size: 65px;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .knapp {
+            display: inline-block;
+            background: orange;
+            color: #210b32;
+            padding: 12px 22px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+
+        .knapp:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        #overraskning {
+            color: #ffb6ff;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #d8b8ff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎃 Glad Halloween! 👻</h1>
+
+        <div class="pumpor">🕸️ 👻 🎃</div>
+
+        <p>
+            BUUU! 💀 Välkommen till den spöklikaste
+            sidan på internet!
+        </p>
+
+        <p>
+            Jag önskar dig en riktigt rolig Halloween
+            fylld med godis, skratt och lagom mycket skräck!
+        </p>
+
+        <button class="knapp" onclick="visaBus()">
+            Vågar du klicka? 👀
+        </button>
+
+        <p id="overraskning"></p>
+
+        <footer>
+            Gjord med 👻 och en nypa svart magi!
+        </footer>
+    </div>
+
+    <script>
+        function visaBus() {
+            document.getElementById("overraskning").textContent =
+                "BUUU! 👻 Ge mig allt ditt godis! 🍬🎃";
+        }
+    </script>
+</body>
+</html>
